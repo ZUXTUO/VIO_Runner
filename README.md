@@ -3,7 +3,7 @@
   <img src="images/Chapter1.png" alt="image" />
 </p>
 
---
+
 ✨🔮✨ **《空间魔法奥秘之书·中高阶卷轴》** ✨🔮✨
 --
 <br>
@@ -54,10 +54,6 @@
 4.  **PnP (透视N点定位)：** 📐📍 一种古老的几何魔法，用于通过已知的N个三维空间点及其在二维图像中的投影，反推魔法师（相机）的位姿。
 
 <br>
-
-<p align="center">
-  <img src="images/Chapter2.png" alt="image" />
-</p>
 <br>
 
 ## **第二章：调制空间魔法的启动仪式**
@@ -106,10 +102,6 @@
    - (暂定)
 
 <br>
-
-<p align="center">
-  <img src="images/Chapter3.png" alt="image" />
-</p>
 <br>
 
 ## **第三章：鸣谢** 🙏🌟
@@ -125,8 +117,4 @@
 愿这份高阶卷轴能指引你在空间魔法的奇幻旅程中不断精进，发现更深邃的奥秘。 ✨🌌🧙‍♂️
 
 <br>
-
-<p align="center">
-  <img src="images/Chapter4.png" alt="image" />
-</p>
 <br>
