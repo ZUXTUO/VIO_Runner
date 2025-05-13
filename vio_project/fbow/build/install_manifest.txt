@@ -1,0 +1,12 @@
+/usr/local/share/fbow/fbowConfig.cmake
+/usr/local/lib/libfbow.so.0.0.1
+/usr/local/lib/libfbow.so.0.0
+/usr/local/lib/libfbow.so
+/usr/local/include/fbow/fbow.h
+/usr/local/include/fbow/fbow_exports.h
+/usr/local/include/fbow/vocabulary_creator.h
+/usr/local/include/fbow/cpu.h
+/usr/local/bin/fbow_create_voc_step0
+/usr/local/bin/fbow_create_voc_step1
+/usr/local/bin/fbow_transform
+/usr/local/bin/fbow_test_cpu_x86
