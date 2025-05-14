@@ -3,7 +3,7 @@
 <div align="center">
   <img src="assets/Chapter1.png" alt="image" />
   <br>
-  <h2>✧･ﾟ: *✧･ﾟ:* 空间魔法秘典 *:･ﾟ✧*:･ﾟ✧</h2>
+  <h2>✧･ﾟ* 空间魔法秘典 *･ﾟ✧</h2>
 </div>
 
 ---
@@ -205,13 +205,22 @@
 **🔗 相关魔法文献链接：** 📖
 - [🌟 空间魔法详解](https://vio.readthedocs.io/zh-cn/latest/)
 - [💻 原始魔法代码之源 (来自gggliuye)](https://github.com/gggliuye/VIO/tree/79f802da26dabdfc3ec7bfa4a871da0c1a2ea165)
-- [🏰 colmap](https://colmap.github.io/)
+- [🏰 colmap (本项目使用了3.6版本)](https://colmap.github.io/)
 - [👜 FBoW](https://github.com/rmsalinas/fbow)
 - [🚩 SIFT (1999)](http://www.cs.ubc.ca/~lowe/papers/iccv99.pdf)
 - [🚩 SIFT (2004)](http://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf)
 ---
 
 <div align="center">
-  <h3>✧･ﾟ: *✧･ﾟ:* 愿这份中高阶卷轴能指引你在空间魔法的奇幻旅程中不断精进，发现更深邃的奥秘。 *:･ﾟ✧*:･ﾟ✧</h3>
+  <h3>✧･ﾟ:* 愿这份中高阶卷轴能指引你在空间魔法的奇幻旅程中不断精进，发现更深邃的奥秘。 *:･ﾟ✧</h3>
   <p>🧙‍♂️ ✨ 🌌 ✨ 🔮</p>
 </div>
+
+
+
+<div align="center">
+  <img src="assets/icon.png" alt="image" />
+</div>
+
+---
+[使用需要遵守该魔导证书，点击查看](LICENSE)

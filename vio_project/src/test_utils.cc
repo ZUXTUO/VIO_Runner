@@ -17,10 +17,10 @@ Ulocalization::Ulocalization(const std::string& database_path, const std::string
     reconstruction = new Reconstruction;
     reconstruction->ReadBinary(recs_path);
 
-    // read the camera
+    // 读取相机
     camera = reconstruction->Camera(1);
 
-    // receive all map points
+    // 接收所有地图点
     std::unordered_set<colmap::point3D_t> mapPointsIds = reconstruction->Point3DIds();
 
     mapPoints.clear();
@@ -32,7 +32,7 @@ Ulocalization::Ulocalization(const std::string& database_path, const std::string
       mapPoints.push_back(pt);
     }
 
-    // receive all keyframes
+    // 接收所有关键帧
     framesIds.clear();
     framesIds = reconstruction->RegImageIds();
 
@@ -49,10 +49,10 @@ Ulocalization::Ulocalization(const std::string& database_path, const std::string
 
     numCamera = reconstruction->NumCameras();
 
-    std::cout << std::endl << " [MAP INFO] sparse feature map  " << std::endl; 
-    std::cout << "            camera number : "<< reconstruction->NumCameras() << std::endl;
-    std::cout << "            point number : "<< reconstruction->NumPoints3D() << std::endl;
-    std::cout << "            image number : "<< reconstruction->NumImages() << std::endl << std::endl;
+    std::cout << std::endl << " [地图信息] 稀疏特征图  " << std::endl; 
+    std::cout << "            摄像机编号 : "<< reconstruction->NumCameras() << std::endl;
+    std::cout << "            点编号 : "<< reconstruction->NumPoints3D() << std::endl;
+    std::cout << "            图像编号 : "<< reconstruction->NumImages() << std::endl << std::endl;
 }
 
 Ulocalization::~Ulocalization()
@@ -69,10 +69,10 @@ void Ulocalization::setImageFilePath(const std::string& set_path, const std::str
 
 void Ulocalization::PrintCameraInfo()
 {
-    // read the cameras
+    // 读取相机
     for (int i = 0 ;  i<numCamera ; i ++){
         Camera cameraTmp = reconstruction->Camera(i+1);
-        std::cout << " the " << i+1 << "th camera: " << cameraTmp.ModelName() << std::endl;
+        std::cout << " 第 " << i+1 << "个相机: " << cameraTmp.ModelName() << std::endl;
         std::cout << "    (fx, fx, cx, cy) : (" << cameraTmp.ParamsToString() << ")" << std::endl;
     }
     std::cout << std::endl;
@@ -84,7 +84,7 @@ FeatureMatches Ulocalization::MatchWithImage(image_t idx, FeatureDescriptors &de
     FeatureMatches matches;
     if(!database->ExistsImage(idx))
     {
-        std::cout << " [ERROR] image not exist" << std::endl;
+        std::cout << " [错误] 图片不存在" << std::endl;
         return matches;
     }
     std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
@@ -92,9 +92,9 @@ FeatureMatches Ulocalization::MatchWithImage(image_t idx, FeatureDescriptors &de
     FeatureKeypoints keypoints2 = database->ReadKeypoints(idx);
     FeatureDescriptors descriptors2 = database->ReadDescriptors(idx);
 
-    std::cout << " [MATCH] there are " << keypoints2.size() << " points in image " << idx << std::endl;
+    std::cout << " [匹配] 检测到 " << keypoints2.size() << " 个点在图片中 " << idx << std::endl;
 
-    // match test 
+    // 匹配测试
     match_options.num_threads = 4;
     MatchSiftFeaturesCPU(match_options, descriptors, descriptors2, &matches);
 
@@ -102,15 +102,15 @@ FeatureMatches Ulocalization::MatchWithImage(image_t idx, FeatureDescriptors &de
 
     double ttrack= std::chrono::duration_cast<std::chrono::duration<double> >(t2 - t1).count();
 
-    std::cout << " two image have matches : " << matches.size() ;
-    std::cout << ". Matching uses time : " << ttrack << std::endl;
+    std::cout << " 两张图片有匹配 : " << matches.size() ;
+    std::cout << ". 匹配使用时间 : " << ttrack << std::endl;
 
     return matches;
 }
 
 void Ulocalization::CreateGPUMatch()
 {
-    std::cout << " [MATCH GPU] create sift matcher gpu. " << std::endl << std::endl;
+    std::cout << " [GPU 匹配] 创建 sift matcher gpu. " << std::endl << std::endl;
 
     if(!siftMatcherGPUcreated){ 
         match_options.num_threads = 4;
@@ -127,13 +127,13 @@ FeatureMatches Ulocalization::MatchWithImageGPU(image_t idx, FeatureDescriptors 
     FeatureMatches matches;
   
     if(!siftMatcherGPUcreated){
-        std::cout << " [ERROR] sift gpu matcher not created." << std::endl;
+        std::cout << " [错误] sift gpu matcher 未被创建." << std::endl;
         return matches;
     }
 
     if(!database->ExistsImage(idx))
     {
-        std::cout << " [ERROR] image not exist." << std::endl;
+        std::cout << " [错误] 图片不存在." << std::endl;
         return matches;
     }
     std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
@@ -149,8 +149,8 @@ FeatureMatches Ulocalization::MatchWithImageGPU(image_t idx, FeatureDescriptors 
     double ttrack= std::chrono::duration_cast<std::chrono::duration<double> >(t2 - t1).count();
     
     if(false){
-        std::cout << " two image have matches : " << matches.size() ;
-        std::cout << ". Matching uses time : " << ttrack << std::endl;
+        std::cout << " 两张图片有匹配 : " << matches.size() ;
+        std::cout << ". 匹配使用时间 : " << ttrack << std::endl;
     }
 
     return matches;
@@ -163,17 +163,17 @@ void Ulocalization::View()
 
 void Ulocalization::LoadVocTree(const std::string& index_path)
 {
-    std::cout << " [VOC TREE]  Read indexs : " << std::endl;
+    std::cout << " [VOC TREE]  读取索引 : " << std::endl;
     visual_index.Read(index_path);
 
-    std::cout << "             Calculating TF-IDF . " << std::endl << std::endl;
+    std::cout << "             计算 TF-IDF . " << std::endl << std::endl;
     visual_index.Prepare();
 
 }
 
 void Ulocalization::MakeVocTreeIndex(const std::string& tree_path, const std::string& write_path)
 {
-    std::cout << "  Make vocabulary tree index. " <<std::endl;
+    std::cout << "  制作词汇树索引. " <<std::endl;
 
     VisualIndex_LY<> visual_index;
     visual_index.Read(tree_path);
@@ -191,7 +191,7 @@ void Ulocalization::MakeVocTreeIndex(const std::string& tree_path, const std::st
             continue;
         }
         count++;
-        std::cout << StringPrintf("Indexing image %d [ %d / %d ]", idx, count, framesIds.size()) << std::endl;
+        std::cout << StringPrintf("索引图像 %d [ %d / %d ]", idx, count, framesIds.size()) << std::endl;
         auto keypoints = database->ReadKeypoints(idx);
         auto descriptors = database->ReadDescriptors(idx);
         ExtractTopScaleFeatures(&keypoints, &descriptors, max_num_features);
@@ -201,16 +201,16 @@ void Ulocalization::MakeVocTreeIndex(const std::string& tree_path, const std::st
         visual_index.Add(index_options, idx, keypoints, descriptors);
         //PrintElapsedTime(timer);
     }
-    std::cout << "  Calculating TF-IDF . " << std::endl;
+    std::cout << "  计算 TF-IDF . " << std::endl;
     visual_index.Prepare();
-    std::cout << "  Saving to file " << write_path << std::endl;
+    std::cout << "  保存到文件 " << write_path << std::endl;
     visual_index.Write(write_path);
 }
 
 
 void Ulocalization::MakeVocTreeIndexForFloor(const std::string& tree_path, const std::string& write_path, int floor)
 {
-    std::cout << "  Make vocabulary tree index for the " << floor << "th floor. " <<std::endl;
+    std::cout << "  为第 " << floor << "层建立词汇树索引. " <<std::endl;
 
     VisualIndex_LY<> visual_index;
     visual_index.Read(tree_path);
@@ -234,9 +234,9 @@ void Ulocalization::MakeVocTreeIndexForFloor(const std::string& tree_path, const
             continue;
 
         count++;
-        std::cout << "Image path : " << imagePath << std::endl;
+        std::cout << "图片路径 : " << imagePath << std::endl;
 
-        std::cout << StringPrintf(" - Indexing image [ %d / %d ]", idx + 1, framesIds.size()) << std::endl;
+        std::cout << StringPrintf(" - 索引图像 [ %d / %d ]", idx + 1, framesIds.size()) << std::endl;
   
         auto keypoints = database->ReadKeypoints(idx);
         auto descriptors = database->ReadDescriptors(idx);
@@ -246,20 +246,19 @@ void Ulocalization::MakeVocTreeIndexForFloor(const std::string& tree_path, const
         visual_index.Add(index_options, idx, keypoints, descriptors);
     }
 
-    std::cout << "  Have index " << count << " images. " << std::endl;
-    std::cout << "  Calculating TF-IDF . " << std::endl;
+    std::cout << "  有索引 " << count << " 张图片. " << std::endl;
+    std::cout << "  计算 TF-IDF . " << std::endl;
     visual_index.Prepare();
 
-    std::cout << "  Saving to file " << write_path << std::endl;
+    std::cout << "  保存到文件 " << write_path << std::endl;
     visual_index.Write(write_path);
 }
 
 
 /*
-* Voc tree will offer a lot of candidates
-* However not all the candidates are good, or should I say, most of them are bad
-* As a result still a lot of time taken to calulate match points between candidates
-* input image. In order to obtain a satsifying result.
+* Voc 树会提供大量候选集
+* 然而，并非所有候选集都很好，或者应该说，大多数都不太好。
+* 因此，为了获得令人满意的结果，仍然需要花费大量时间来计算候选集与输入图像之间的匹配点。
 */
 image_t Ulocalization::MatchVocTree(FeatureKeypoints &keypoints, FeatureDescriptors &descriptors)
 {
@@ -271,7 +270,7 @@ image_t Ulocalization::MatchVocTree(FeatureKeypoints &keypoints, FeatureDescript
     // image retrival will out put all the candidates detected
     query_options.num_images_after_verification = 1;
 
-    std::cout << " [VOC TREE] retrieval the best image candidate. " << std::endl;
+    std::cout << " [VOC TREE] 检索最佳图像候选. " << std::endl;
     Retrieval retrieval;
     retrieval.image_id = 0;
     visual_index.Query(query_options, keypoints, descriptors,
