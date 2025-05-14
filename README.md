@@ -153,10 +153,7 @@
 
 <br>
 
-<video width="600" controls>
-  <source src="assets/vid1.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[点击查看影像](assets/vid1.mp4)
 
 
 ## **第三章：鸣谢** 🙏🌟
