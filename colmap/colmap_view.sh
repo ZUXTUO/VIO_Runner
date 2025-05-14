@@ -5,7 +5,7 @@ set -euo pipefail
 JOBS=$(nproc)
 
 # 项目根目录
-PROJECT_DIR="/home/olsc/Project"
+PROJECT_DIR="./"
 DB_PATH="$PROJECT_DIR/database.db"
 IMAGE_DIR="$PROJECT_DIR/images"
 SPARSE_DIR="$PROJECT_DIR/sparse"

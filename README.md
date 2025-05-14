@@ -14,11 +14,11 @@
 
 **1. 低阶魔法：** 🧙‍💫
    - **咒语媒介：** 需借助古老的“魔法阵”（吟唱生出的魔法阵图案）来锚定空间坐标。
-   - **魔法显现：** 能够召唤或安置虚幻的造物，使其如同被无形的丝线牵引，忠实地追随“Mark图”的位姿方向。
+   - **魔法显现：** 能够召唤或安置虚幻的造物，使其如同被无形的丝线牵引，忠实地追随“Marker图”的位姿方向。
 
 **1.5. 中低阶魔法：** 🌌✨
    - **咒语进阶：** 同样依赖“魔法阵”（吟唱生出的魔法阵图案）来确定空间方位。
-   - **魔法固化：** 然而，此刻的魔法已初步觉醒更强的力量！借助重力魔法（例如驾驭6fof的奥秘），虚幻之物一旦被“Mark图”锚定，便不再如泡影般消散。即使你穿梭于空间，它们也能奇迹般地停留在最初显现之地。
+   - **魔法固化：** 然而，此刻的魔法已初步觉醒更强的力量！借助重力魔法（例如驾驭6fof的奥秘），虚幻之物一旦被“Marker图”锚定，便不再如泡影般消散。即使你穿梭于空间，它们也能奇迹般地停留在最初显现之地。
 
 **2. 中阶魔法：** 👁️🌠
    - **感知领域：** 现代魔法师们开始运用视觉或其他多元感官，如同拥有洞悉万物的第三只眼，去认知、感知周围的空间。
@@ -99,10 +99,52 @@
      ```bash
      bash project_clean.sh
      ```
-   - **领域洁净：** 此咒语将自动清理环境目录中残留的魔法痕迹，保持领域的 чистота。
+   - **领域洁净：** 此咒语将自动清理环境目录中残留的魔法痕迹，保持结界领域的清洁。
 
-**6. 如何启动魔法** 🚀🔮
-   - (暂定)
+**6. 如何创建魔法结界** 🌏🔮
+
+<br>
+<p align="center">
+  <img src="images/img1.jpg" alt="image" />
+</p>
+
+   - 步入古老的`colmap`文件夹领域。
+   - 将蕴含你需要构建的世界之影的图像碎片，投入神圣的`images`文件夹容器之中。
+   - 吟唱全新的创世咒语：
+
+   ```bash
+   bash colmap_build.sh
+   ```
+
+   - 若虚拟世界构建成型，世界的轮廓将以奇迹之姿显现：
+
+<p align="center">
+  <img src="images/img2.jpg" alt="image" />
+</p>
+
+   - 若想再次凝视那由魔力凝聚而成的星辰之雾，咏唱此咒：
+
+   ```bash
+   bash colmap_view.sh
+   ```
+
+**7. 如何启动魔法** 🔮🚀
+
+重新踏入`vio_project`文件夹领域：
+
+创建地图文件`VocIndex.bin`来铭刻世界索引：
+
+./VIO_Localization_Server-x86_64.AppImage index ../colmap/database.db ../colmap/sparse/ VocIndex.bin ~/WorkSpace/Vocab/vocab_tree_flickr100K_words1M.bin
+
+启动服务器：
+
+./VIO_Localization_Server-x86_64.AppImage server ../colmap/database.db ../colmap/sparse/ VocIndex.bin 8080
+
+[备用]创建另一种虚拟地图`SavedMap.dat`：
+
+./VIO_Localization_Server-x86_64.AppImage save ../colmap/database.db ../colmap/sparse/ SavedMap.dat keyframes.txt
+
+
 
 <br>
 <p align="center">
