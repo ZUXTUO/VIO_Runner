@@ -29,7 +29,7 @@
    - **鲁棒显现：** 虚实世界的融合如同闪电般快速且稳定，魔法造物在真实世界中显现，拥有更强的“鲁棒性”，不易受到干扰而消散。
 
 **3. 高阶魔法：** 🦉🌃☀️
-   - **全域洞察：** 掌握此等魔法的巫师，其目光如同穿越时空的星辰，能够理解整个空间的方位关系。更令人惊叹的是，他们甚至能排除时间（白昼与黑夜的更迭）和季节（四季的流转）所带来的时空变幻的影响。
+   - **全域洞察：** 掌握此等魔法的魔法师，其目光如同穿越时空的星辰，能够理解整个空间的方位关系。更令人惊叹的是，他们甚至能排除时间（白昼与黑夜的更迭）和季节（四季的流转）所带来的时空变幻的影响。
    - **永恒锚定：** 无论外界如何变化，他们都能精准定位自身，并将虚幻之境与真实世界完美交织，使魔法造物在既定的位置永恒存在。
    
 <br>
@@ -134,17 +134,22 @@
 
 创建地图文件`VocIndex.bin`来铭刻世界索引：
 
+```bash
 ./VIO_Localization_Server-x86_64.AppImage index ../colmap/database.db ../colmap/sparse/ VocIndex.bin ~/WorkSpace/Vocab/vocab_tree_flickr100K_words1M.bin
+```
 
 启动服务器：
 
+```bash
 ./VIO_Localization_Server-x86_64.AppImage server ../colmap/database.db ../colmap/sparse/ VocIndex.bin 8080
+```
 
 [备用]创建另一种虚拟地图`SavedMap.dat`：
 
+```bash
 ./VIO_Localization_Server-x86_64.AppImage save ../colmap/database.db ../colmap/sparse/ SavedMap.dat keyframes.txt
 
-
+```
 
 <br>
 <p align="center">
