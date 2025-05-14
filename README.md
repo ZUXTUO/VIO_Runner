@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="images/Chapter1.png" alt="image" />
+  <img src="assets/Chapter1.png" alt="image" />
 </p>
 
 
@@ -56,7 +56,7 @@
 <br>
 
 <p align="center">
-  <img src="images/Chapter2.png" alt="image" />
+  <img src="assets/Chapter2.png" alt="image" />
 </p>
 
 ## **第二章：调制空间魔法的启动仪式**
@@ -105,7 +105,7 @@
 
 <br>
 <p align="center">
-  <img src="images/img1.jpg" alt="image" />
+  <img src="assets/img1.jpg" alt="image" />
 </p>
 
    - 步入古老的`colmap`文件夹领域。
@@ -119,7 +119,7 @@
    - 若虚拟世界构建成型，世界的轮廓将以奇迹之姿显现：
 
 <p align="center">
-  <img src="images/img2.jpg" alt="image" />
+  <img src="assets/img2.jpg" alt="image" />
 </p>
 
    - 若想再次凝视那由魔力凝聚而成的星辰之雾，咏唱此咒：
@@ -148,8 +148,16 @@
 
 <br>
 <p align="center">
-  <img src="images/Chapter3.png" alt="image" />
+  <img src="assets/Chapter3.png" alt="image" />
 </p>
+
+<br>
+
+<video width="600" controls>
+  <source src="assets/vid1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 ## **第三章：鸣谢** 🙏🌟
 

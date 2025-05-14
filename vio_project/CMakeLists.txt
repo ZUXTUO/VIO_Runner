@@ -150,5 +150,5 @@ install(FILES
 set(CPACK_GENERATOR "DEB")
 set(CPACK_PACKAGE_NAME "vio_ulocalization")
 set(CPACK_PACKAGE_VERSION "1.0.0")
-set(CPACK_PACKAGE_CONTACT "3086003479@qq.com")
+set(CPACK_PACKAGE_CONTACT "ZUXTUO@test.com")
 include(CPack)

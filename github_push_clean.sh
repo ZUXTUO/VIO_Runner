@@ -15,3 +15,4 @@ rm -rf ./colmap/database.db-shm
 rm -rf ./colmap/database.db-wal
 rm -rf ./colmap/dense
 rm -rf ./colmap/sparse
+rm -rf ./colmap/images/*.jpg
