@@ -1,3 +1,11 @@
+/**
+*    综合启动器
+*
+*    ZUXTUO
+*
+*
+*/
+
 #include <opencv2/opencv.hpp>
 #include <iostream>
 #include <fstream>
