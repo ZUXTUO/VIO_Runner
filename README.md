@@ -1,3 +1,5 @@
+[日本語](README_ja.md)  [English](README_en.md)
+
 # ✨ 🔮 ✨ **《空间魔法·中高阶卷轴》** ✨ 🔮 ✨
 
 <div align="center">
