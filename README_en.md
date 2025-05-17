@@ -2,11 +2,11 @@
 
 # ✨ 🔮 ✨ **《Space Magic · Upper-Mid Tier Scroll》** ✨ 🔮 ✨
 
-\<div align="center"\>
-  \<img src="assets/Chapter1.png" alt="image" /\>
-  \<br\>
-  \<h2\>✧･ﾟ\* The Arcane Secrets of Spatial Magic \*･ﾟ✧\</h2\>
-\</div\>
+<div align="center">
+  <img src="assets/Chapter1.png" alt="image" />
+  <br>
+  <h2>✧･ﾟ* The Arcane Secrets of Spatial Magic *･ﾟ✧</h2>
+</div>
 
 -----
 
@@ -87,11 +87,11 @@ In studying the ancient texts of spatial magic, you may encounter the following 
 
 -----
 
-\<div align="center"\>
-  \<img src="assets/Chapter2.png" alt="image" /\>
-  \<br\>
-  \<h2\>⚜️ A Guide to Magical Practice ⚜️\</h2\>
-\</div\>
+<div align="center">
+  <img src="assets/Chapter2.png" alt="image" />
+  <br>
+  <h2>⚜️ A Guide to Magical Practice ⚜️</h2>
+</div>
 
 ## 📖 **Chapter 2: Preparing the Ritual to Initiate Spatial Magic** 🧪
 
@@ -147,9 +147,9 @@ To successfully cast powerful spatial magic, you need to carefully prepare the i
 
 ### **🌏 How to Create a Magical Enclosure** 🔮
 
-\<div align="center"\>
-  \<img src="assets/img1.jpg" alt="image" /\>
-\</div\>
+<div align="center">
+  <img src="assets/img1.jpg" alt="image" />
+</div>
 
    - 🚶‍♂️ Step into the ancient realm of the `colmap` folder.
    - 📸 Place the image fragments containing the shadows of the world you need to build into the sacred container of the `images` folder.
@@ -161,9 +161,9 @@ To successfully cast powerful spatial magic, you need to carefully prepare the i
 
    - 🌌 If the virtual world takes shape, the contours of the world will appear in a miraculous form:
 
-\<div align="center"\>
-  \<img src="assets/img2.jpg" alt="image" /\>
-\</div\>
+<div align="center">
+  <img src="assets/img2.jpg" alt="image" />
+</div>
 
    - 👁️ If you wish to gaze again at the stardust condensed by magic, recite this spell:
 
@@ -201,17 +201,17 @@ Re-enter the realm of the `vio_project` folder:
 
 The incantation method is: IP address + port number + image address + the focal length data corresponding to this image.
 
-\<div align="center"\>
-  \<img src="assets/vid1.gif" alt="image" /\>
-\</div\>
+<div align="center">
+  <img src="assets/vid1.gif" alt="image" />
+</div>
 
 -----
 
-\<div align="center"\>
-  \<img src="assets/Chapter3.png" alt="image" /\>
-  \<br\>
-  \<h2\>🏆 Acknowledgements and References 🏆\</h2\>
-\</div\>
+<div align="center">
+  <img src="assets/Chapter3.png" alt="image" />
+  <br>
+  <h2>🏆 Acknowledgements and References 🏆</h2>
+</div>
 
 ## ✨ **Chapter 3: Acknowledgements** 🙏
 
@@ -230,14 +230,14 @@ We sincerely thank the following great souls whose light of wisdom has illuminat
 
 -----
 
-\<div align="center"\>
-  \<h3\>✧May this upper-mid-tier scroll guide you to continuously improve in the wondrous journey of spatial magic and discover deeper mysteries✧\</h3\>
-  \<p\>🧙‍♂️ ✨ 🌌 ✨ 🔮\</p\>
-\</div\>
+<div align="center">
+  <h3>✧May this upper-mid-tier scroll guide you to continuously improve in the wondrous journey of spatial magic and discover deeper mysteries✧</h3>
+  <p>🧙‍♂️ ✨ 🌌 ✨ 🔮</p>
+</div>
 
-\<div align="center"\>
-  \<img src="assets/icon.png" alt="image" /\>
-\</div\>
+<div align="center">
+  <img src="assets/icon.png" alt="image" />
+</div>
 
 -----
 

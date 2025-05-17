@@ -2,11 +2,11 @@
 
 # ✨ 🔮 ✨ **《空間魔法・中高階巻軸》** ✨ 🔮 ✨
 
-\<div align="center"\>
-  \<img src="assets/Chapter1.png" alt="image" /\>
-  \<br\>
-  \<h2\>✧･ﾟ\* 空間魔法秘典 \*･ﾟ✧\</h2\>
-\</div\>
+<div align="center">
+  <img src="assets/Chapter1.png" alt="image" />
+  <br>
+  <h2>✧･ﾟ* 空間魔法秘典 *･ﾟ✧</h2>
+</div>
 
 -----
 
@@ -87,11 +87,11 @@
 
 -----
 
-\<div align="center"\>
-  \<img src="assets/Chapter2.png" alt="image" /\>
-  \<br\>
-  \<h2\>⚜️ 魔法実践指南 ⚜️\</h2\>
-\</div\>
+<div align="center">
+  <img src="assets/Chapter2.png" alt="image" />
+  <br>
+  <h2>⚜️ 魔法実践指南 ⚜️</h2>
+</div>
 
 ## 📖 **第二章：空間魔法の起動儀式を調製する** 🧪
 
@@ -147,9 +147,9 @@
 
 ### **🌏 魔法結界の創造方法** 🔮
 
-\<div align="center"\>
-  \<img src="assets/img1.jpg" alt="image" /\>
-\</div\>
+<div align="center">
+  <img src="assets/img1.jpg" alt="image" />
+</div>
 
    - 🚶‍♂️ 古代の `colmap` フォルダ領域に足を踏み入れます。
    - 📸 あなたが構築する必要がある世界の影を含む画像の断片を、神聖な `images` フォルダの容器に投入します。
@@ -161,9 +161,9 @@
 
    - 🌌 もし仮想世界が形成されれば、世界の輪郭は奇跡的な姿で現れるでしょう：
 
-\<div align="center"\>
-  \<img src="assets/img2.jpg" alt="image" /\>
-\</div\>
+<div align="center">
+  <img src="assets/img2.jpg" alt="image" />
+</div>
 
    - 👁️ もし魔力によって凝縮された星の霧を再び見つめたいのであれば、この呪文を詠唱します：
 
@@ -201,17 +201,17 @@
 
 詠唱方法は、IPアドレス + ポート番号 + 画像アドレス + その画像に対応する焦点距離データです。
 
-\<div align="center"\>
-  \<img src="assets/vid1.gif" alt="image" /\>
-\</div\>
+<div align="center">
+  <img src="assets/vid1.gif" alt="image" />
+</div>
 
 -----
 
-\<div align="center"\>
-  \<img src="assets/Chapter3.png" alt="image" /\>
-  \<br\>
-  \<h2\>🏆 謝辞と参考文献 🏆\</h2\>
-\</div\>
+<div align="center">
+  <img src="assets/Chapter3.png" alt="image" />
+  <br>
+  <h2>🏆 謝辞と参考文献 🏆</h2>
+</div>
 
 ## ✨ **第三章：謝辞** 🙏
 
@@ -230,14 +230,14 @@
 
 -----
 
-\<div align="center"\>
-  \<h3\>✧この中高階巻物が、あなたの空間魔法の奇妙な旅路において、絶えず進歩し、より深遠な奥義を発見する手引きとなることを願っています✧\</h3\>
-  \<p\>🧙‍♂️ ✨ 🌌 ✨ 🔮\</p\>
-\</div\>
+<div align="center">
+  <h3>✧この中高階巻物が、あなたの空間魔法の奇妙な旅路において、絶えず進歩し、より深遠な奥義を発見する手引きとなることを願っています✧</h3>
+  <p>🧙‍♂️ ✨ 🌌 ✨ 🔮</p>
+</div>
 
-\<div align="center"\>
-  \<img src="assets/icon.png" alt="image" /\>
-\</div\>
+<div align="center">
+  <img src="assets/icon.png" alt="image" />
+</div>
 
 -----
 
